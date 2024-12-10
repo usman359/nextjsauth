@@ -28,7 +28,7 @@ export const sendEmail = async ({ email, emailType, userId }: EmailType) => {
 
     console.log("MAILTRAP_USER:", process.env.MAILTRAP_USER);
     console.log("MAILTRAP_PASSWORD:", process.env.MAILTRAP_PASSWORD);
-    console.log("DOMAIN:", process.env.DOMAIN);
+    // console.log("DOMAIN:", process.env.DOMAIN);
 
     const transport = nodemailer.createTransport({
       host: "sandbox.smtp.mailtrap.io",
